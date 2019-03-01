@@ -5,7 +5,6 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #333;
-  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -25,8 +24,32 @@ body {
   color: black;
 }
 
+.sidebar {
+  width: 200px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.sidebar a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #ccc;
+}
+
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
 .main {
   padding: 16px;
   margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
+  /*height: 1500px;*/
+  float: right;
 }
