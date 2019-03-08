@@ -2,6 +2,17 @@ body {
   margin:0;
 }
 
+#title {
+  position: absolute;
+  right: 0%;
+  top: 5%;
+  margin-top: 2%;
+  padding: 1%;
+  border: 3px ridge brown;
+  width: 15%;
+  text-align: center;
+}
+
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -24,13 +35,13 @@ body {
   color: black;
 }
 
-.sidebar {
-  width: 200px;
+.leftmenu {
+  width: 10%;;
   height: 100%;
   overflow-y: auto;
 }
 
-.sidebar a {
+.leftmenu a {
   background-color: #eee;
   color: black;
   display: block;
@@ -38,11 +49,11 @@ body {
   text-decoration: none;
 }
 
-.sidebar a:hover {
+.leftmenu a:hover {
   background-color: #ccc;
 }
 
-.sidebar a.active {
+.leftmenu a.active {
   background-color: #4CAF50;
   color: white;
 }
@@ -50,6 +61,5 @@ body {
 .main {
   padding: 16px;
   margin-top: 30px;
-  /*height: 1500px;*/
   float: right;
 }
