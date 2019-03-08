@@ -8,10 +8,10 @@ body {
   top: 5%;
   margin-top: 2%;
   padding: 1%;
-  border: 3px ridge brown;
+  border: 5px ridge #aa8f84;
   width: 15%;
   text-align: center;
-  background-image: url(/*PUT IMAGE HERE*/);
+  background-image: url(https://raw.githubusercontent.com/SwiftNinja99/CoderFair/master/assets/images/marble-bg.jpg);
 }
 
 .navbar {
