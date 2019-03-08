@@ -11,6 +11,7 @@ body {
   border: 3px ridge brown;
   width: 15%;
   text-align: center;
+  background-image: url(/*PUT IMAGE HERE*/);
 }
 
 .navbar {
