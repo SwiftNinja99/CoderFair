@@ -1,23 +1,28 @@
 body {
   margin:0;
+  background-color: #D9B689;
 }
 
 #title {
   position: absolute;
-  right: 0%;
-  top: 5%;
-  margin-top: 2%;
-  padding: 1%;
+  right: 0;
+  top: 0;
+  margin-bottom: 2%;
+  /*padding: 1%;*/
   border: 5px ridge #aa8f84;
-  width: 15%;
+  width: 100%;
+  height: 9%;
+  font-family: Baskerville,palatino linotype,Palatino,century schoolbook l,times new roman,serif;
+  display: block;
   text-align: center;
   background-image: url(https://raw.githubusercontent.com/SwiftNinja99/CoderFair/master/assets/images/marble-bg.jpg);
 }
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
-  top: 0;
+  background-color: #00000065;
+  position: absolute;
+  top: 10%;
   width: 100%;
 }
 
@@ -37,13 +42,16 @@ body {
 }
 
 .leftmenu {
-  width: 10%;;
+  position: absolute;
+  left: 0;
+  top: 16%;
+  width: 10%;
   height: 100%;
   overflow-y: auto;
 }
 
 .leftmenu a {
-  background-color: #eee;
+  background-color: #00000000;
   color: black;
   display: block;
   padding: 12px;
@@ -51,16 +59,18 @@ body {
 }
 
 .leftmenu a:hover {
-  background-color: #ccc;
+  background-color: #fef1d8;
 }
 
 .leftmenu a.active {
-  background-color: #4CAF50;
+  background-color: #4e381d;
   color: white;
 }
 
 .main {
+  position: absolute;
   padding: 16px;
   margin-top: 30px;
-  float: right;
+  right: 0;
+  top: 15%;
 }
