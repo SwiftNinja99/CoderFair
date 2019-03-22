@@ -3,6 +3,15 @@ body {
   background-color: #D9B689;
 }
 
+.main {
+  position: absolute;
+  padding: 16px;
+  margin-top: 30px;
+  left:10%;
+  top: 15%;
+  font-size: 18px;
+}
+
 #title {
   position: absolute;
   right: 0;
@@ -16,6 +25,12 @@ body {
   display: block;
   text-align: center;
   background-image: url(https://raw.githubusercontent.com/SwiftNinja99/CoderFair/master/assets/images/marble-bg.jpg);
+}
+
+.topic {
+  border: 5px double #aa8f84;
+  width: 150px;
+  height: 150px;
 }
 
 .navbar {
@@ -65,12 +80,4 @@ body {
 .leftmenu a.active {
   background-color: #4e381d;
   color: white;
-}
-
-.main {
-  position: absolute;
-  padding: 16px;
-  margin-top: 30px;
-  right: 0;
-  top: 15%;
 }
