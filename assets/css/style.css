@@ -12,6 +12,12 @@ body {
   font-size: 18px;
 }
 
+#medusa-title {
+  height: 100%;
+  animation: medusa 10s infinite;
+  position: absolute;
+}
+
 #title {
   position: absolute;
   right: 0;
@@ -33,10 +39,50 @@ body {
   height: 150px;
 }
 
+/* Dropdown Button */
+.dropbtn {
+  background: none;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
 .navbar {
   overflow: hidden;
   background-color: #00000065;
   position: absolute;
+  display: inline-block;
   top: 10%;
   width: 100%;
 }
@@ -80,4 +126,14 @@ body {
 .leftmenu a.active {
   background-color: #4e381d;
   color: white;
+}
+
+@keyframes medusa {
+    0% {left: 80%;}
+    50% {
+      left:5%;
+      -webkit-transform: scaleX(-1);
+       transform: scaleX(-1);
+    }
+    100% {left: 80%;}
 }
